@@ -11,10 +11,88 @@
     <body>
         <header>
             <!-- Replace this comment line by the code of the navigation bar. -->
-            <p>Test</p>
+            <div class="container-fluid bg-body">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                      <a class="btn btn-primary" href="#">Differences between Angular and AngularJS</a>
+                        <ul class="navbar-nav">
+
+                            <!-- History dropdown -->
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                              History
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+
+                          <!-- Libraries dropdown -->
+                          
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                              Libraries
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                  </nav>
+            </div>
         </header>
         <main class="container-lg">
             <!-- Replace this comment line by other elements of "Web Technology 1" homework task. -->
+            <div class="row">
+
+                <!-- Left column -->
+
+                <div class="col-8 bg-light">
+                    <h1 class="display-6"><b>Angular</b></h1>
+                    <p class="lead"><em><strong>Angular</strong></em> (commonly referred to as "Angular 2+" or "Angular v2 and above") is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.</p>
+
+
+                    <h1 class="display-6"><b>Differences between Angular and AngularJS</b></h1>
+                <hr>
+                    <p>
+                        Google designed Angular as a ground-up rewrite of AngularJS.
+                        <ul>
+                            <li>Angular does not have a concept of "scope" or controllers, instead it uses a hierarchy of components as its primary architectural characteristic.</li>
+                            <li>Angular has a different expression syntax, focusing on "[ ]" for property binding, and "( )" for event binding
+                            </li>
+                            <li>Modularity – much core functionality has moved to modules
+                            </li>
+                            <li>Angular recommends the use of Microsoft's TypeScript language, which introduces the following features:
+                            <ul>
+                                <li>Static typing, including Generics
+                                </li>
+                                <li>Annotations</li>
+                            </ul>
+                            </li>
+                            <li>TypeScript is a superset of ECMAScript 6 (ES6), and is backwards compatible with ECMAScript 5 (i.e.: JavaScript).
+                            </li>
+                            <li>Dynamic loading
+                            </li>
+                            <li>Asynchronous template compilations
+                            </li>
+                            <li>Iterative callbacks provided by RxJS. RxJS limits state visibility and debugging, but these can be solved with reactive add-ons like ngrx or ngxs.
+                            </li>
+                            <li>Support for Angular Universal, which runs Angular applications on servers
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+
+                <!-- Right column -->
+
+                <div class="col-4 bg-danger">
+                    <p>TEST2</p>
+                </div>
+            </div>
         </main>
 		<!-- JavaScript; do not delete! -->
 		<!-- Bootstrap Bundle with Popper -->
